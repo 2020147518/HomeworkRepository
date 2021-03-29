@@ -1,0 +1,12 @@
+h1{font-size:xx-large;font-weight:900;font-family: 'Bookman', serif;}
+p {color:black}
+.page {border-top:2px solid crimson;border-bottom:2px solid crimson;}
+.box1 {text-align:center;background-color:lawngreen;width:90px;height:20px;border:3px solid gray;margin:0;padding:0;float:left;}
+.cancel {text-align:center;background-color:crimson;width:90px;height:20px;border:3px solid gray;margin:0;padding:0;float:left;}
+.signup {text-align:center;background-color:deepskyblue;width:90px;height:20px;border:3px solid gray;margin:0;padding:0;float:left;}
+a:link { color: black; text-decoration: none;}
+a:visited { color: black; text-decoration: none;}
+a:hover { color: black; text-decoration: none;}
+hr {border:2px solid black;margin-left:-100px;}
+head {margin-left:100px;}
+body {margin-left:100px;}
