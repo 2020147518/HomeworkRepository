@@ -18,5 +18,3 @@ body {margin-left:400px; width:1020px;}
 .search_section {border-right: 2px solid black;}
 section.introduce {column-count: 2;column-gap: 3.5px;column-width: 480px;column-rule-style: solid;column-rule-width: 1px;}
 hr.head {border:1.5px solid black;text-align:center;width:200%;}
-h1.header {font-size:xx-large;font-weight:900;font-family: 'Bookman', serif;animation-name: benner; animation-duration: 2s; animation-timing-function: linear;animation-delay: 1ms;animation-iteration-count: 1;}
-@keyframes benner {0% {margin-left:100%;width:300%}50% {margin-left:50%;width:250%}100% {margin-left:0%;width:100%}}
