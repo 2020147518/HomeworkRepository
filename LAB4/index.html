@@ -31,14 +31,14 @@
             <main></main>
         </div>
         <script>
-        fetch('products.json').then(function(response) {
+        fetch('product.json').then(function(response) {
             return response.json();})
             .then(function(json) {
-                let products = json;
-                initialize(products);})
+                let product = json;
+                initialize(product);})
                 .catch(function(err) {
                     console.log('Fetch problem: ' + err.message);});
-                    function initialize(products) {
+                    function initialize(product) {
                         let category = document.querySelector('#category');
                         let searchTerm = document.querySelector('#searchTerm');
                         let searchButton = document.querySelector('button');
@@ -47,7 +47,7 @@
                         let lastSearch = '';
                         let categoryGroup;
                         let finalGroup;
-                        finalGroup = products;
+                        finalGroup = product;
                         updateDisplay();
                         categoryGroup = [];
                         finalGroup = [];
@@ -63,19 +63,19 @@
                             lastCategory = category.value;
                             lastSearch = searchTerm.value.trim();
                             if(category.value === 'All') {
-                                categoryGroup = products;
-                                selectProducts();
+                                categoryGroup = product;
+                                selectProduct();
                             } else {
-                                for(let i = 0; i < products.length ; i++) {
-                                    if(products[i].type === category.value) {
-                                        categoryGroup.push(products[i]);
+                                for(let i = 0; i < product.length ; i++) {
+                                    if(product[i].type === category.value) {
+                                        categoryGroup.push(product[i]);
                                     }
                                 }
-                                selectProducts();
+                                selectProduct();
                             }
                         }
                     }
-                    function selectProducts() {
+                    function selectProduct() {
                         let term = searchTerm.value.trim();
                         if(term === '') {
                             finalGroup = categoryGroup;
