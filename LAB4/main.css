@@ -1,4 +1,4 @@
-header{border:3px solid black;border-bottom:0;}
+h1{font-size:xx-large;font-weight:900;font-family: 'Bookman', serif;}
 h2{font-size:large;font-weight:900;font-family: 'Bookman', serif;}
 p {color:black}
 .page {border-top:2px solid crimson;border-bottom:2px solid crimson;}
@@ -12,11 +12,12 @@ a:hover { color: black; text-decoration: none;}
 head {margin-left:400px;}
 body {margin-left:400px; width:1020px;}
 hr.head {border:1.5px solid black;text-align:center;width:100%;}
-aside {display: flex;flex-flow:column;align-items:stretch;border-right:5px solid black;flex:3;}
+aside {padding:20px;display:flex;flex-flow:column;align-items:stretch;border-right:5px solid black;flex:3;}
 aside div {margin-bottom:25px;}
 label {margin-bottom:5px;}
-input {background:black;color:white;border:none;}
-button {background:black;color:yellow;border:none;border-radius:10px;}
+input {font-size:20px;background:black;color:white;border:none;width:100%;}
+button {font-size:20px;background:black;color:yellow;border:none;border-radius:10px;width:100%;}
+select {font-size:20px;width:100%;}
 body > div {border:3px solid black;display:flex;}
 main{display:flex;flex-flow:row wrap;justify-content: space-around;flex:7;}
 section {width:45%;margin:5px;background-color:black;position:relative;height:215px;}
