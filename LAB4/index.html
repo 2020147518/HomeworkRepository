@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "UTF-8">
+        <title>  </title>
+        <link rel = "stylesheet" type = "text/css" href = "main.css">
+    </head>
+    <body>
+        <h1 class = "header">Welcome to INTERNET SHOP</h1>
+        <p><span class = "page">메인페이지</span>&nbsp;
+            <a href = "login.html">로그인</a>&nbsp;
+            <a href = "signup.html">회원가입</a><hr>
+        </p>
+        <br>
+        <div class = "search_section">
+            <label>Choose a category:<br>
+                <select name = "category" id = "category">
+                    <option value="All">ALL</option>
+                    <option value="HTML">HTML</option>
+                    <option value="CSS">CSS</option>
+                    <option value="JAVA">JAVA</option>
+                </select>
+            </label>
+            <br>
+            <br>
+            <label>Enter search term:<br>
+                <input type="text" name = "key" id = "key" placeholder="e.g.HTML"/>
+            </label>
+            <br>
+            <br>
+            <label><input type="button" class = "filt_button" value="Filter results" id = "filt"></label>
+        </div>
+        <div id = "item"></div>
+        <script>
+            var category
+            var key
+            window.onscroll = () =>{
+                if (window.innerHeight +  window.scrollY >= document.body.offsetHeight){
+                    console.log("makeRequest");
+                    makeRequest();
+                }
+            };
+            function makeRequest() {
+                fetch("file:///G:/강의/21-1/인터넷프로그래밍/GitHub/HomeworkRepository/LAB4/product.json")
+                .then(function(response){
+                    return response.json();})
+                .then(json => {
+                    json.forEach(filter);})
+                .catch(function(err){
+                    console.log('Fetch problem: ' + err.message)
+                });
+            }
+            function filter(item){
+                if (item.category == "All"){
+                    if ((item.key == "")||(item.key == key)){
+                        console.log(category + key);
+                        console.log("makeDiv");
+                        makeDiv(item);
+                    }
+                } else {
+                    if ((item.category == category)&&((item.key == "")||(item.key == key))){
+                        console.log(category + key);
+                        console.log("makeDiv");
+                        makeDiv(item);
+                    }
+                }
+            }
+            function makeDiv(item){
+                post = document.createElement('div');
+                post.className = 'post ';
+                post.innerHTML = '<div class = "div_item" id='+item.id+'><input type="buttom" value="Click to see more" class = "more"><div class = "box"><img class ="itemimage" src='+item.image+' width="100px" height="100px"/></div></div>'
+                document.querySelector('#item').append(post);
+            }
+            document.getElementById("filt").onclick = function() {
+                category = document.getElementById("category").value;
+                key = document.getElementById("key").value;
+                makeRequest();
+            }
+        </script>
+    </body>
+</html>

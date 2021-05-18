@@ -1,0 +1,19 @@
+h1{font-size:xx-large;font-weight:900;font-family: 'Bookman', serif;}
+h2{font-size:large;font-weight:900;font-family: 'Bookman', serif;}
+p {color:black}
+.page {border-top:2px solid crimson;border-bottom:2px solid crimson;}
+.box1 {text-align:center;background-color:lawngreen;width:90px;height:20px;border:3px solid gray;margin:1px;padding:0;float:left;}
+.box2 {width:480px;height:480px;border:1px solid gray;margin:5px;padding:0;float:left;}
+.cancel {text-align:center;background-color:crimson;width:90px;height:20px;border:3px solid gray;margin:0;padding:0;float:left;}
+.signup {text-align:center;background-color:deepskyblue;width:90px;height:20px;border:3px solid gray;margin:0;padding:0;float:left;}
+a:link { color: black; text-decoration: none;}
+a:visited { color: black; text-decoration: none;}
+a:hover { color: black; text-decoration: none;}
+img { transition: transform 2s;transform-origin: left top;}
+img:hover { transform:scale(3,3);transform-origin: left top;}
+head {margin-left:400px;}
+body {margin-left:400px; width:1020px;}
+section.introduce {column-count: 2;column-gap: 3.5px;column-width: 480px;column-rule-style: solid;column-rule-width: 1px;}
+hr.head {border:2px solid black;margin-left:-400px;text-align:center;width:200%;}
+h1.header {font-size:xx-large;font-weight:900;font-family: 'Bookman', serif;animation-name: benner; animation-duration: 2s; animation-timing-function: linear;animation-delay: 1ms;animation-iteration-count: 1;}
+@keyframes benner {0% {margin-left:100%;width:300%}50% {margin-left:50%;width:250%}100% {margin-left:0%;width:100%}}

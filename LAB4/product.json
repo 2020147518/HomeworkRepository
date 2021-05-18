@@ -1,0 +1,94 @@
+[
+    {
+        "id" : 1,
+        "name" : "text1",
+        "category" : "HTML",
+        "cost" : 10,
+        "key" : "HTML",
+        "image" : "./text.jpg"
+    },{
+        "id" : 2,
+        "name" : "text2",
+        "category" : "HTML",
+        "cost" : 10,
+        "key" : "HTML",
+        "image" : "./text.jpg"
+    },{
+        "id" : 3,
+        "name" : "text3",
+        "category" : "HTML",
+        "cost" : 10,
+        "key" : "HTML",
+        "image" : "./text.jpg"
+    },{
+        "id" : 4,
+        "name" : "text4",
+        "category" : "HTML",
+        "cost" : 10,
+        "key" : "HTML",
+        "image" : "./text.jpg"
+    },{
+        "id" : 5,
+        "name" : "text5",
+        "category" : "CSS",
+        "cost" : 10,
+        "key" : "CSS",
+        "image" : "./text.jpg"
+    },{
+        "id" : 6,
+        "name" : "text6",
+        "category" : "CSS",
+        "cost" : 10,
+        "key" : "CSS",
+        "image" : "./text.jpg"
+    },{
+        "id" : 7,
+        "name" : "text7",
+        "category" : "CSS",
+        "cost" : 10,
+        "key" : "CSS",
+        "image" : "./text.jpg"
+    },{
+        "id" : 8,
+        "name" : "text8",
+        "category" : "CSS",
+        "cost" : 10,
+        "key" : "CSS",
+        "image" : "./text.jpg"
+    },{
+        "id" : 9,
+        "name" : "text9",
+        "category" : "JAVA",
+        "cost" : 10,
+        "key" : "JAVA",
+        "image" : "./text.jpg"
+    },{
+        "id" : 10,
+        "name" : "text10",
+        "category" : "JAVA",
+        "cost" : 10,
+        "key" : "JAVA",
+        "image" : "./text.jpg"
+    },{
+        "id" : 11,
+        "name" : "text11",
+        "category" : "JAVA",
+        "cost" : 10,
+        "key" : "JAVA",
+        "image" : "./text.jpg"
+    },{
+        "id" : 12,
+        "name" : "text12",
+        "category" : "JAVA",
+        "cost" : 10,
+        "key" : "JAVA",
+        "image" : "./text.jpg"
+    },{
+        "id" : 13,
+        "name" : "text13",
+        "category" : "JAVA",
+        "cost" : 10,
+        "key" : "JAVA",
+        "image" : "./text.jpg"
+    }
+]
