@@ -6,10 +6,10 @@
         <link rel = "stylesheet" type = "text/css" href = "main.css">
     </head>
     <body>
-        <h1 class = "header">Welcome to INTERNET SHOP</h1>
+        <header>Welcome to INTERNET SHOP</header>
         <p><span class = "page">메인페이지</span>&nbsp;
             <a href = "login.html">로그인</a>&nbsp;
-            <a href = "signup.html">회원가입</a><hr>
+            <a href = "signup.html">회원가입</a><hr class = "head">
         </p>
         <div>
             <aside>
@@ -51,7 +51,7 @@
                         updateDisplay();
                         categoryGroup = [];
                         finalGroup = [];
-                        searcButton.onclick = selectCategory;
+                        searchButton.onclick = selectCategory;
                         function selectCategory(e) {
                             e.preventDefault();
                             categoryGroup = [];
