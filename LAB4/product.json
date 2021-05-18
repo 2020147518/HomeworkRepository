@@ -1,94 +1,74 @@
 [
     {
-        "id" : 1,
-        "name" : "text1",
-        "category" : "HTML",
-        "cost" : 10,
-        "key" : "HTML",
-        "image" : "./text.jpg"
-    },{
-        "id" : 2,
-        "name" : "text2",
-        "category" : "HTML",
-        "cost" : 10,
-        "key" : "HTML",
-        "image" : "./text.jpg"
-    },{
-        "id" : 3,
-        "name" : "text3",
-        "category" : "HTML",
-        "cost" : 10,
-        "key" : "HTML",
-        "image" : "./text.jpg"
-    },{
-        "id" : 4,
-        "name" : "text4",
-        "category" : "HTML",
-        "cost" : 10,
-        "key" : "HTML",
-        "image" : "./text.jpg"
-    },{
-        "id" : 5,
-        "name" : "text5",
-        "category" : "CSS",
-        "cost" : 10,
-        "key" : "CSS",
-        "image" : "./text.jpg"
-    },{
-        "id" : 6,
-        "name" : "text6",
-        "category" : "CSS",
-        "cost" : 10,
-        "key" : "CSS",
-        "image" : "./text.jpg"
-    },{
-        "id" : 7,
-        "name" : "text7",
-        "category" : "CSS",
-        "cost" : 10,
-        "key" : "CSS",
-        "image" : "./text.jpg"
-    },{
-        "id" : 8,
-        "name" : "text8",
-        "category" : "CSS",
-        "cost" : 10,
-        "key" : "CSS",
-        "image" : "./text.jpg"
-    },{
-        "id" : 9,
-        "name" : "text9",
-        "category" : "JAVA",
-        "cost" : 10,
-        "key" : "JAVA",
-        "image" : "./text.jpg"
-    },{
-        "id" : 10,
-        "name" : "text10",
-        "category" : "JAVA",
-        "cost" : 10,
-        "key" : "JAVA",
-        "image" : "./text.jpg"
-    },{
-        "id" : 11,
-        "name" : "text11",
-        "category" : "JAVA",
-        "cost" : 10,
-        "key" : "JAVA",
-        "image" : "./text.jpg"
-    },{
-        "id" : 12,
-        "name" : "text12",
-        "category" : "JAVA",
-        "cost" : 10,
-        "key" : "JAVA",
-        "image" : "./text.jpg"
-    },{
-        "id" : 13,
-        "name" : "text13",
-        "category" : "JAVA",
-        "cost" : 10,
-        "key" : "JAVA",
-        "image" : "./text.jpg"
+        "name" : "i5-11400-Intel",
+        "category" : "CPU",
+        "cost" : 227.32,
+        "image" : "./11400.jpg"
+    },
+    {
+        "name" : "3600-AMD",
+        "category" : "CPU",
+        "cost" : 164.90,
+        "image" : "./3600.jpg"
+    },
+    {
+        "name" : "i7-10700K-Intel",
+        "category" : "CPU",
+        "cost" : 350.83,
+        "image" : "./10700K.jpg"
+    },
+    {
+        "name" : "i7-11700-Intel",
+        "category" : "CPU",
+        "cost" : 354.87,
+        "image" : "./11700.jpg"
+    },
+    {
+        "name" : "5900X-AMD",
+        "category" : "CPU",
+        "cost" : 620.35,
+        "image" : "./5900X.jpg"
+    },
+    {
+        "name" : "MSI-B450M",
+        "category" : "MainBoard",
+        "cost" : 85.18,
+        "image" : "./B450M.jpg"
+    },
+    {
+        "name" : "ASUS-TUFGamingB550M",
+        "category" : "MainBoard",
+        "cost" : 148.18,
+        "image" : "./B550M.jpg"
+    },
+    {
+        "name" : "ASUS-EXA320M",
+        "category" : "MainBoard",
+        "cost" : 65.66,
+        "image" : "./A320M.jpg"
+    },
+    {
+        "name" : "EMTEK-RTX3060",
+        "category" : "GraphicsCard",
+        "cost" : 1177.90,
+        "image" : "./3060.jpg"
+    },
+    {
+        "name" : "MSI-GTX1660SUPER",
+        "category" : "GraphicsCard",
+        "cost" : 807.43,
+        "image" : "./1660.jpg"
+    },
+    {
+        "name" : "GIGABYTE-RTX2060",
+        "category" : "GraphicsCard",
+        "cost" : 752.73,
+        "image" : "./2060.jpg"
+    },
+    {
+        "name" : "EMTEK-RTX3090",
+        "category" : "GraphicsCard",
+        "cost" : 3586.45,
+        "image" : "./3090.jpg"
     }
 ]
