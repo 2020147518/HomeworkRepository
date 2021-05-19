@@ -36,6 +36,11 @@
                     initialize(product);})
                     .catch(function(err) {
                         console.log('Fetch problem: ' + err.message);});
+                    window.onscroll = () => {
+                        if (window.innerHeight +window.scrollY >= documnet.body.offsetHeight){
+                            updateDisplay();
+                        }
+                    }
                     function initialize(product) {
                         let category = document.querySelector('#category');
                         let searchTerm = document.querySelector('#searchTerm');
