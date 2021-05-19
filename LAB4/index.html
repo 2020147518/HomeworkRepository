@@ -36,77 +36,36 @@
                     initialize(product);})
                     .catch(function(err) {
                         console.log('Fetch problem: ' + err.message);});
-                    window.onscroll = () => {
-                        if (window.innerHeight +window.scrollY >= documnet.body.offsetHeight){
-                            updateDisplay();
-                        }
-                    }
                     function initialize(product) {
                         let category = document.querySelector('#category');
                         let searchTerm = document.querySelector('#searchTerm');
                         let searchButton = document.querySelector('button');
                         let main = document.querySelector('main');
-                        let lastCategory = category.value;
-                        let lastSearch = '';
-                        let categoryGroup;
-                        let finalGroup;
-                        finalGroup = product;
-                        updateDisplay();
-                        categoryGroup = [];
-                        finalGroup = [];
+                        let beforeCategory = category.value;
+                        let beforeSearch = '';
+                        let filtCategory;
+                        let finalItem;
+                        finalItem = product;
+                        update();
+                        filtCategory = [];
+                        finalItem = [];
                         searchButton.onclick = selectCategory;
-                        function selectCategory(e) {
-                            e.preventDefault();
-                            categoryGroup = [];
-                            finalGroup = [];
-                            if(category.value === lastCategory && searchTerm.value.trim() === lastSearch) {
-                                return;
-                            } else {
-                                lastCategory = category.value;
-                                lastSearch = searchTerm.value.trim();
-                                if(category.value === 'All') {
-                                    categoryGroup = product;
-                                    selectProduct();
-                                } else {
-                                    for(let i = 0; i < product.length ; i++) {
-                                        if(product[i].category === category.value) {
-                                            categoryGroup.push(product[i]);
-                                        }
-                                    }
-                                    selectProduct();
-                                }
-                            }
-                        }
-                        function selectProduct() {
-                            let term = searchTerm.value.trim();
-                            if(term === '') {
-                                finalGroup = categoryGroup;
-                                updateDisplay();
-                            } else {
-                                for(let i = 0; i < categoryGroup.length ; i++) {
-                                    if(categoryGroup[i].name.indexOf(term) !== -1) {
-                                        finalGroup.push(categoryGroup[i]);
-                                    }
-                                }
-                                updateDisplay();
-                            }
-                        }
-                        function updateDisplay() {
+                        function update() {
                             while (main.firstChild) {
                                 main.removeChild(main.firstChild);
                             }
-                            if(finalGroup.length === 0) {
-                                let para = document.createElement('p');
-                                para.textContent = 'No results to display!';
-                                main.appendChild(para);
+                            if(finalItem.length === 0) {
+                                let text = document.createElement('p');
+                                text.textContent = 'No results!';
+                                main.appendChild(text);
                             } else {
-                                for(let i = 0; i < finalGroup.length; i++) {
-                                    let product = finalGroup[i];
-                                    showProduct(product.image, product)
+                                for(let i = 0; i < finalItem.length; i++) {
+                                    let product = finalItem[i];
+                                    showItem(product.image, product)
                                 }
                             }
                         }
-                        function showProduct(imageroute, product) {
+                        function showItem(imageroute, product) {
                             let section = document.createElement('section');
                             let span = document.createElement('span');
                             let image = document.createElement('img');
@@ -120,13 +79,47 @@
                                 section.appendChild(head);
                                 section.appendChild(cost);
                             }
-                            //section.appendChild(head);
-                            //section.appendChild(cost);
                             image.src = imageroute;
                             image.alt = product.name;
                             main.appendChild(section);
                             section.appendChild(span);
                             section.appendChild(image);
+                        }
+                        function selectCategory(some) {
+                            some.preventDefault();
+                            filtCategory = [];
+                            finalItem = [];
+                            if(category.value === beforeCategory && searchTerm.value.trim() === beforeSearch) {
+                                return;
+                            } else {
+                                beforeCategory = category.value;
+                                beforeSearch = searchTerm.value.trim();
+                                if(category.value === 'All') {
+                                    filtCategory = product;
+                                    filtItem();
+                                } else {
+                                    for(let i = 0; i < product.length ; i++) {
+                                        if(product[i].category === category.value) {
+                                            filtCategory.push(product[i]);
+                                        }
+                                    }
+                                    filtItem();
+                                }
+                            }
+                        }
+                        function filtItem() {
+                            let term = searchTerm.value.trim();
+                            if(term === '') {
+                                finalItem = filtCategory;
+                                update();
+                            } else {
+                                for(let i = 0; i < filtCategory.length ; i++) {
+                                    if(filtCategory[i].name.indexOf(term) !== -1) {
+                                        finalItem.push(filtCategory[i]);
+                                    }
+                                }
+                                update();
+                            }
                         }
                     }
         </script>
