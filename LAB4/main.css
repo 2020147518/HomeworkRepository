@@ -1,5 +1,5 @@
 h1{font-size:xx-large;font-weight:900;font-family: 'Bookman', serif;}
-h2{font-family: 'Bookman', serif;right:10px;text-align:center;font-size:16px;color:yellow;background:black;width:160px;position:absolute;z-index:3000;}
+h2{font-family: 'Bookman', serif;right:10px;text-align:center;font-size:16px;color:yellow;background:black;width:100%;position:absolute;z-index:3000;}
 p {color:black}
 .page {border-top:2px solid crimson;border-bottom:2px solid crimson;}
 .box1 {text-align:center;background-color:lawngreen;width:90px;height:20px;border:3px solid gray;margin:1px;padding:0;float:left;}
